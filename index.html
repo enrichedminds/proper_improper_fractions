@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improper and Proper Fractions</title>
+    <link rel="stylesheet" href="improperandproperfractions.css">
+</head>
+<body>
+    <h1>Improper and Proper Fractions</h1>
+    <div id="visualization"></div>
+    <div id="controls">
+        <label for="denominator">Denominator (total parts):</label>
+        <input type="number" id="denominator" min="1" max="20" value="2">
+        <br>
+        <label for="numerator">Numerator (colored parts):</label>
+        <input type="number" id="numerator" min="0" max="100" value="3">
+        <br>
+        <label for="division-type">Division Type:</label>
+        <select id="division-type">
+            <option value="rows">Divide by Rows</option>
+            <option value="columns">Divide by Columns</option>
+        </select>
+        <br>
+        <button onclick="visualizeFraction()">Visualize Fraction</button>
+    </div>
+    <div id="fraction-message"></div>
+    <script src="improperandproperfractions.js"></script>
+</body>
+</html>
